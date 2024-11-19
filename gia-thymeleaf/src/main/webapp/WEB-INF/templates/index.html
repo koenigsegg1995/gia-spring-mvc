@@ -115,7 +115,7 @@
                     <button type="submit">查詢</button>
                 </span>
             </div>
-        
+
 
             <!-- 顯示查詢結果區塊 -->
             <table>
@@ -143,7 +143,7 @@
                                 <input type="hidden" name="empno" th:value="${emp.empno}">
                                 <button type="submit">delete</button>
                             </form>
-                            
+
                             <form th:action="@{/emp2/goToUpdate}" method="post" style="display: inline-block;">
                                 <input type="hidden" name="empno" th:value="${emp.empno}">
                                 <button type="submit">edit</button>
@@ -171,9 +171,9 @@
                     第 <span th:text="${empSelectReq.page}"></span> / <span th:text="${empSelectResVO.pageInfo.totalPages}"></span> 頁
                     <input type="hidden" th:field="*{page}">
                 </div>
-                
-                <button th:if="${empSelectResVO.pageInfo.page > 1}" type="submit" name="pageActions" value="prev">上一頁</button>                
-                
+
+                <button th:if="${empSelectResVO.pageInfo.page > 1}" type="submit" name="pageActions" value="prev">上一頁</button>
+
                 <button th:if="${empSelectResVO.pageInfo.page < empSelectResVO.pageInfo.totalPages}" type="submit" name="pageActions" value="next">下一頁</button>
             </div>
         </form>
