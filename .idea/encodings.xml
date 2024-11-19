@@ -3,6 +3,9 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/gia-model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gia-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gia-rest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gia-rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gia-rest/src/main/webapp/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gia-thymeleaf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gia-thymeleaf/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

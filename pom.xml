@@ -12,6 +12,8 @@
     <modules>
         <module>gia-model</module>
         <module>gia-thymeleaf</module>
+        <module>gia-rest</module>
+        <module>gia-rest</module>
     </modules>
 
     <properties>
