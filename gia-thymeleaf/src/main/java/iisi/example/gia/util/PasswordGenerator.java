@@ -1,4 +1,4 @@
-package iisi.example.gia;
+package iisi.example.gia.util;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
