@@ -1,12 +1,12 @@
 package iisi.example.gia.dept2.controller;
 
-import gia.dept2.view.Dept2AddReq;
-import gia.dept2.view.Dept2InfoResVO;
-import gia.dept2.view.Dept2UpdateReq;
 import iisi.example.gia.dept2.dto.Dept2AddDTO;
 import iisi.example.gia.dept2.dto.Dept2InfoDTO;
 import iisi.example.gia.dept2.dto.Dept2UpdateDTO;
 import iisi.example.gia.dept2.service.Dept2Service;
+import iisi.example.gia.dept2.view.Dept2AddReq;
+import iisi.example.gia.dept2.view.Dept2InfoResVO;
+import iisi.example.gia.dept2.view.Dept2UpdateReq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

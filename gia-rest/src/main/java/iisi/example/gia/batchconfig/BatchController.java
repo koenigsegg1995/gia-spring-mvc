@@ -1,5 +1,6 @@
 package iisi.example.gia.batchconfig;
 
+import jakarta.servlet.ServletContext;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,11 +18,14 @@ public class BatchController {
     @Autowired
     private BatchService batchService;
 
+    @Autowired
+    private ServletContext servletContext;
+
     @PostMapping("exportEmp")
     public ResponseEntity<String> exportEmp(){
         // 確保有這個目錄
         try{
-            File exportDir = new File(BatchConstants.EXPORT_PATH);
+            File exportDir = new File(servletContext.getRealPath(BatchConstants.EXPORT_PATH));
 
             if(!exportDir.exists()){
                 exportDir.mkdirs();

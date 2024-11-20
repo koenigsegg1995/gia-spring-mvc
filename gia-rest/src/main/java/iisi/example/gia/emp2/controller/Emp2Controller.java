@@ -1,12 +1,12 @@
 package iisi.example.gia.emp2.controller;
 
-import gia.emp2.view.Emp2AddReq;
-import gia.emp2.view.Emp2ComplexSelectReq;
-import gia.emp2.view.Emp2ComplexSelectResVO;
-import gia.emp2.view.Emp2UpdateReq;
 import iisi.example.gia.dept2.service.Dept2Service;
 import iisi.example.gia.emp2.dto.*;
 import iisi.example.gia.emp2.service.Emp2Service;
+import iisi.example.gia.emp2.view.Emp2AddReq;
+import iisi.example.gia.emp2.view.Emp2ComplexSelectReq;
+import iisi.example.gia.emp2.view.Emp2ComplexSelectResVO;
+import iisi.example.gia.emp2.view.Emp2UpdateReq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <!-- 定義 log 檔案的儲存位址 -->
-    <property name="LOG_PATH" value="./gia-rest/src/main/webapp/WEB-INF/logs"/>
+<!--    <property name="LOG_PATH" value="#{T(iisi.example.gia.batchconfig.BatchConstants).LOG_PATH}"/>-->
+    <property name="LOG_PATH" value="/WEB-INF/logs"/>
 
     <!-- 定義 log 格式 -->
     <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"/>

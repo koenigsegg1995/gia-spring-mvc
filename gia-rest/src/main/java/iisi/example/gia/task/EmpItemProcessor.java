@@ -1,7 +1,7 @@
 package iisi.example.gia.task;
 
-import gia.emp2.view.Emp2ExportVO;
 import iisi.example.gia.emp2.dto.Emp2ExportDTO;
+import iisi.example.gia.emp2.view.Emp2ExportVO;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.lang.NonNull;
 

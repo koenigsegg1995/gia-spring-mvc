@@ -11,9 +11,8 @@
 
     <modules>
         <module>gia-model</module>
+        <module>gia-rest</module>
         <module>gia-thymeleaf</module>
-        <module>gia-rest</module>
-        <module>gia-rest</module>
     </modules>
 
     <properties>
@@ -48,6 +47,11 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.4.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.logback-extensions</groupId>
+            <artifactId>logback-ext-spring</artifactId>
+            <version>0.1.5</version>
         </dependency>
     </dependencies>
 </project>
