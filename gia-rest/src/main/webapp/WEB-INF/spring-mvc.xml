@@ -22,4 +22,12 @@
 
     <!-- 處理靜態資源 -->
     <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+    <!-- 處理 JSON -->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 </beans>

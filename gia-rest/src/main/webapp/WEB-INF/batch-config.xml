@@ -16,9 +16,17 @@
         <property name="autoProxy" value="true"/>
     </bean>
 
-    <!-- Transaction Manager -->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <!-- 定義 jobRepository -->
+    <bean id="jobRepository"
+          class="org.springframework.batch.core.repository.support.JobRepositoryFactoryBean">
         <property name="dataSource" ref="dataSource"/>
+        <property name="transactionManager" ref="transactionManager"/>
+    </bean>
+
+    <!-- 定義 jobLauncher -->
+    <bean id="jobLauncher"
+          class="org.springframework.batch.core.launch.support.SimpleJobLauncher">
+        <property name="jobRepository" ref="jobRepository"/>
     </bean>
 
     <!-- 定義 reader -->
@@ -41,7 +49,7 @@
     <bean id="empWriter" class="org.springframework.batch.item.file.FlatFileItemWriter" scope="step">
         <aop:scoped-proxy/>
         <!-- 設定檔案輸出路徑，使用 Spring EL 表達式讀取常數類別中的值 -->
-        <property name="resource" value="file:#{T(iisi.example.gia.batchconfig.BatchConstants.EXPORT_PATH}/emp2_export.csv"/>
+        <property name="resource" value="file:#{servletContext.getRealPath(T(iisi.example.gia.batchconfig.BatchConstants).EXPORT_PATH)}/emp2_export.csv"/>
 
         <!-- 設定檔案編碼 -->
         <property name="encoding" value="UTF-8"/>
